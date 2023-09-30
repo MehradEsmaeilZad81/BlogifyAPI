@@ -4,16 +4,20 @@ BlogifyAPI is a Django-based web application designed to power a blog platform. 
 ## Dockerized Django Project Setup and Run Guide
 #### Setup
 1. Clone the repository:
+   ```json
    git clone <repository_url>
    cd BlogifyAPI
-2. Set up the Django project:
+3. Set up the Django project:
+   ```json
    python -m venv env
    source env/bin/activate  (On Windows, use: env\Scripts\activate)
    pip install -r requirements.txt
 #### Running the Application
 1. Build the Docker image:
+   ```json
    docker build .
-2. Run the Docker container:
+3. Run the Docker container:
+   ```json
    docker-compose up -d
    
 ## API Documentation
@@ -35,13 +39,13 @@ BlogifyAPI is a Django-based web application designed to power a blog platform. 
 - **Endpoint**: `/api/login/`
 - **Method**: `POST`
 - **Request Format**:
-  json:
+  ```json
   {
     "username": "example_user",
     "password": "password123",
   }
 - **Expected Response**:
-  json:
+  ```json
   {
     "token": "<authentication_token>",
     "user_id": <user_id>,
@@ -53,7 +57,7 @@ BlogifyAPI is a Django-based web application designed to power a blog platform. 
 - **Method**: `POST`
 - **Authorization Header** : 'Token <authentication_token>'
 - **Expected Response**:
-  json:
+  ```json
   {
     "message": "You are logged out!"
   }
@@ -68,13 +72,13 @@ BlogifyAPI is a Django-based web application designed to power a blog platform. 
 - **Method**: POST
 - **Authorization Header** : 'Token <authentication_token>'
 - **Request Format**:
-  json:
+  ```json
   {
     "title": "Example Blog Post",
     "content": "This is the content of the blog post."
   }
 - **Expected Response**:
-  json
+  ```json
   {
     "title": "Example Blog Post",
     "content": "This is the content of the blog post.",
