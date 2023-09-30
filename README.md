@@ -9,16 +9,16 @@ BlogifyAPI is a Django-based web application designed to power a blog platform. 
    "cd BlogifyAPI"
 3. Set up the Django project:
    ```json
-   python -m venv env
-   source env/bin/activate  (On Windows, use: env\Scripts\activate)
+   "python -m venv env"
+   "source env/bin/activate  (On Windows, use: env\Scripts\activate)"
    pip install -r requirements.txt
 #### Running the Application
 1. Build the Docker image:
    ```json
-   docker build .
+   "docker build ."
 3. Run the Docker container:
    ```json
-   docker-compose up -d
+   "docker-compose up -d"
    
 ## API Documentation
 ### Authentication
@@ -48,7 +48,7 @@ BlogifyAPI is a Django-based web application designed to power a blog platform. 
   ```json
   {
     "token": "<authentication_token>",
-    "user_id": <user_id>,
+    "user_id": "<user_id>",
     "username": "example_user"
   }
 
@@ -82,7 +82,8 @@ BlogifyAPI is a Django-based web application designed to power a blog platform. 
   {
     "title": "Example Blog Post",
     "content": "This is the content of the blog post.",
-    "author": <author_user_id>
+    "author": "<author_user_id>",
+    "publication_date": "now time"
   }
 #### Get Specific Blog Post
 - **Endpoint**: /blog/all/<id>
