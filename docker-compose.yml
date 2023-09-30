@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  web:
+    image: blogify
+    environment: 
+      - POSTGRES_DB=BlogifyAPI
+      - POSTGRES_USER=Adminuser
+      - POSTGRES_PASSWORD=1234
+      - POSTGRES_HOST=192.168.12.230
+      - POSTGRES_PORT=5432
+    command: python /code/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - 8000:8000
