@@ -10,8 +10,8 @@ BlogifyAPI is a Django-based web application designed to power a blog platform. 
 3. Set up the Django project:
    ```json
    "python -m venv env"
-   "source env/bin/activate  (On Windows, use: env\Scripts\activate)"
-   pip install -r requirements.txt
+   "source env/bin/activate  (On Windows, use: env'\'Scripts\activate)"
+   "pip install -r requirements.txt"
 #### Running the Application
 1. Build the Docker image:
    ```json
