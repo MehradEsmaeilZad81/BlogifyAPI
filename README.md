@@ -5,8 +5,8 @@ BlogifyAPI is a Django-based web application designed to power a blog platform. 
 #### Setup
 1. Clone the repository:
    ```json
-   git clone <repository_url>
-   cd BlogifyAPI
+   "git clone <repository_url>
+   cd BlogifyAPI"
 3. Set up the Django project:
    ```json
    python -m venv env
